@@ -1,0 +1,9 @@
+3
+7
+0
+LOAD 0
+ADD 1
+STORE 2
+JUMP 6
+
+3

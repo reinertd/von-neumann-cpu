@@ -1,0 +1,226 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.77 [en] (X11; U; SunOS 5.7 sun4u) [Netscape]">
+   <meta name="AUTHOR" content="Daniel Reinert">
+   <meta name="CREATED" content="20010124;13223800">
+   <meta name="CHANGED" content="20011106;16080900">
+   <meta name="DESCRIPTION" content="Hilfetext zum Von-Neumann-CPU-Simulator">
+   <meta name="KEYWORDS" content="Von-Neumann-CPU-Simulator,Von-Neumann-CPU,Von Neumann CPU,Simulator,CPU,Von Neumann,Downloads,Download,Praktische Informatik,Informatik,Hilfe">
+   <title>Von-Neumann-CPU-Simulator</title>
+<style>
+	<!--
+		TD P { color: #ffffff }
+		P { color: #ffffff }
+		BLOCKQUOTE { color: #330000 }
+		A:visited { color: #ff3f3f }
+		A:link { color: #0000ff }
+	-->
+	</style>
+</head>
+<body text="#330000" bgcolor="#CCCCCC" link="#0000FF" vlink="#FF3F3F" background="rub-background-002.gif">
+&nbsp;
+<center>
+<p><a NAME="Anfang"></a><b><font color="#330000"><font size=+4>Von-Neuman-CPU-Simulator</font></font></b>
+<p><font color="#330000"><font size=+2><a href="cpu.jar">Download Jar-File</a></font></font>
+<br><font color="#330000">(Achtung: Bitte Klicken Sie mit der rechten Maustaste
+auf den Link und w&auml;hlen "Speichern Unter" und speichern die Datei
+als cpu.jar. Sie kann ausgef&uuml;hrt werden ohne entpackt zu werden.)</font>
+<p><font color="#330000"><font size=+2><a href="cpu.zip">Download Zip-File</a></font></font>
+<br><font color="#330000">(In dieser Datei ist auch diese Html-Seite enthalten.)</font></center>
+
+<p><br>
+<br>&nbsp;
+<blockquote STYLE="margin-left: 2cm; margin-right: 2cm; margin-bottom: 0cm">&nbsp;</blockquote>
+
+<dl>
+<dl>&nbsp;
+<table BORDER=0 CELLSPACING=2 CELLPADDING=2 COLS=2 WIDTH="100%" NOSAVE >
+<tr NOSAVE>
+<td NOSAVE><b><font color="#330000">Inhalt der Seite:</font></b>
+<blockquote><font color="#330000"><a href="#Allgemein">Allgemein</a></font>
+<br><font color="#330000"><a href="#Systemvoraussetzungen">Systemvoraussetzungen</a></font>
+<br><font color="#330000"><a href="#Starten">Starten des Programmes</a></font>
+<br><font color="#330000"><a href="#Benutzung">Hilfe zur&nbsp; Benutzung</a></font></blockquote>
+
+<blockquote STYLE="margin-left: 2cm; margin-right: 2cm"><font color="#330000"><a href="#laden_speichern">Dateien
+laden und Speichern</a></font>
+<br><font color="#330000"><a href="#erstellen">Maschinenprogramme erstellen</a></font>
+<br><font color="#330000"><a href="#ausfuhren">Maschinenprogramme ausf&uuml;hren</a></font></blockquote>
+
+<blockquote STYLE="margin-left: 2cm; margin-right: 2cm"><font color="#330000"><a href="#Menu">Das
+Men&uuml;</a></font>
+<br><font color="#330000"><a href="#Toolbar">Die Toolleiste</a></font>
+<br><font color="#330000"><a href="#Speicher">Der Speicherinhalt</a></font>
+<br><font color="#330000"><a href="#Register">Die Register</a></font>
+<br><font color="#330000"><a href="#Einstellungen">Die Einstellungen</a></font>
+<br><font color="#330000"><a href="#Statuszeile">Die Statuszeile</a></font></blockquote>
+</td>
+
+<td></td>
+</tr>
+</table>
+</dl>
+</dl>
+<a NAME="Allgemein"></a><b><font color="#330000">Allgemein:</font></b>
+<br><font color="#330000">Der Von-Neumann-CPU-Simulator ist ein in Java
+geschriebenes Programm zur Simulation einer Von-Neumann-CPU. Das Programm
+soll (Informatik-) Studenten helfen Maschinenprogramme f&uuml;r eine Von-Neumann-CPU
+zu schreiben und zu testen.</font><font color="#330000"></font>
+<p><font color="#330000"><a href="#Anfang">Zur&uuml;ck zum Anfang der Seite</a></font>
+<p><a NAME="Systemvoraussetzungen"></a><b><font color="#330000">Systemvoraussetzungen:</font></b>
+<br><font color="#330000">Zum Starten werden folgende Komponenten ben&ouml;tigt:</font>
+<blockquote><font color="#330000">Computer mit Windows/Unix/Linux/MacOS</font></blockquote>
+
+<blockquote><font color="#330000"><a href="http://java.sun.com/j2se/1.3/jre/">Java
+2 Runtime Environment, Standard Edition, v 1.3 (1.2 funktioniert nicht
+mehr)</a></font></blockquote>
+
+<blockquote>ca. 65 MB Arbeitsspeicher</blockquote>
+<font color="#330000">Java 2 v1.3 kann bein Sun heruntergeladen werden,
+oder im Rechenzentrum der Ruhr-Universit&auml;t gegen eine Schutzgeb&uuml;hr
+erworben werden.</font><font color="#330000"></font>
+<p><font color="#330000"><a href="#Anfang">Zur&uuml;ck zum Anfang der Seite</a></font>
+<p><a NAME="Starten"></a><b><font color="#330000">Starten des Programmes:</font></b>
+<br><font color="#330000">Unter der Voraussetzung das Java 2 v1.3 ordnungsgem&auml;&szlig;
+installiert ist startet man den CPU-Simulator mit dem Befehl:</font>
+<blockquote STYLE="margin-left: 2cm; margin-right: 2cm">java -jar cpu.jar</blockquote>
+<font color="#330000">aus dem Verzeichnis heraus, in dem sich die Datei
+cpu.jar befindet. Unter Windows ist es auch m&ouml;glich durch Doppelklick
+auf die Datei cpu.jar den Simulator zu Starten.</font>
+<p><font color="#330000"><a href="#Anfang">Zur&uuml;ck zum Anfang der Seite</a></font>
+<p><a NAME="Benutzung"></a><b><font color="#330000">Hilfe zur&nbsp; Benutzung</font></b>
+<p><a NAME="laden_speichern"></a><b><font color="#330000">Dateien laden
+und Speichern:</font></b>
+<br><font color="#330000">Beim Starten des Simulators wird automatisch,
+falls vorhanden die Datei "config.cps" geladen. Diese wird beim Beenden
+des Programmes auch automatisch gespeichert. Somit wird der aktuelle Zustand
+des Simulators immer wiederhergestellt. Andere Zust&auml;nde lassen sich
+&uuml;ber das Men&uuml; Datei->Laden/Speichern oder STRG-L/STRG-S oder
+&uuml;ber die ersten beiden Kn&ouml;pfe der Toolleiste laden bzw. speichern.
+Wird ein neuer Zustand geladen fragt das Programm nicht danach ob der alte
+Zustand gespeichert werden soll. Dieser wird unwiderruflich &uuml;berschrieben,
+sofern man ihn nicht vorher gespeichert hat. Speichern Sie also erstellte
+Programme sofort ab, bevor Sie sie ausf&uuml;hren oder neue erstellen.</font>
+<p><font color="#330000"><a href="#Anfang">Zur&uuml;ck zum Anfang der Seite</a></font>
+<p><a NAME="erstellen"></a><b><font color="#330000">Maschinenprogramme
+erstellen:</font></b>
+<br><font color="#330000">Das erstellen eines Maschinenprogrammes ist denkbar
+einfach. Auf der mit "Speicherinhalt" &uuml;berschriebenen Fl&auml;che
+des Simulators befinden sich zwei Speicherausschnitte jeweils um das Programm
+bzw. das Adressregister. Mit den Pfeil-Hoch bzw. Pfeil-Runter Kn&ouml;pfen
+bei den Speicherausschnitten erh&ouml;hen Sie jeweils den Registerwert
+und &auml;ndern damit den Speicherausschnitt. Das Adressregister zeigt
+auf Daten und somit k&ouml;nnen Sie in diesem Speicherausschnitt Daten
+eingeben (in Form von Zahlen). Doppelklicken Sie einfach auf eine Speicherzelle,
+welche Sie editieren m&ouml;chten und Sieb k&ouml;nnen in diese schreiben.
+In den Speicherausschnitt beim PC-Register k&ouml;nnen Sie Befehle eingeben.
+Wenn das Programm vollst&auml;ndig eingegeben ist k&ouml;nnen Sie die Start-
+und Endadresse des Programmes auf der Einstellungen-Fl&auml;che festlegen.
+Sie k&ouml;nnen dies auch tun, indem Sie mit der Maus auf die zweite Spalte
+der entsprechenden Speicherzeile klicken und das Start- (gr&uuml;ner Pfeil)
+bzw. Endsymbol (rotes Quadrat) ausw&auml;hlen. Speicher Sie nun am besten
+Ihr Programm ab.</font>
+<p><font color="#330000"><a href="#Anfang">Zur&uuml;ck zum Anfang der Seite</a></font>
+<p><a NAME="ausfuhren"></a><b><font color="#330000">Maschinenprogramme
+ausf&uuml;hren:</font></b>
+<br><font color="#330000">Ist das Programm erstellt, so k&ouml;nnen Sie
+es durch Klicken des gr&uuml;nen Pfeiles in der Toolleiste, mit dem Befehl
+Programm->Ausf&uuml;hren, oder durch dr&uuml;cken der Taste F8 ausf&uuml;hren.
+Bitte beachten Sie das die Startadresse und die Endadresse korrekt gesetzt
+sind. Die Programmzeile mit der Endadresse wird dabei als noch ausgef&uuml;hrt.
+Danach stoppt das Programm und setzt den Progammz&auml;hler auf die Endadresse
+zur&uuml;ck. Wird w&auml;hrend der Ausf&uuml;hrung eine Zeile mit Haltepunkt
+erreicht, so stoppt das Programm bevor die Zeile ausgef&uuml;hrt wird.
+W&auml;hren der Ausf&uuml;hrung kann die Geschwindigkeit der CPU jederzeit
+ge&auml;ndert werden. Wird w&auml;hren der Ausf&uuml;hrung der Stop Befehl
+gegeben (per Button,Tastendruck oder im Men&uuml; &uuml;ber Programm->Stoppen),
+so stoppt das Programm sobald der gerade bearbeitete Befehl abgearbeitet
+ist. Ein gestopptes Programm kann mit Programm->Fortfahren (F5) wieder
+fortgesetzt werden. Das Programm kann auch schrittweise Abgearbeitet werden.
+Dazu mu&szlig; aber der Programmz&auml;hler am Anfang manuell auf den Anfang
+des Programmes gesetzt werden. Tippen Sie die Adresse dazu in das Feld
+PC ein und dr&uuml;cken Sie Return.</font>
+<p><font color="#330000"><a href="#Anfang">Zur&uuml;ck zum Anfang der Seite</a></font>
+<p><a NAME="Menu"></a><b><font color="#330000">Das Men&uuml;:</font></b>
+<br><font color="#330000">Das Men&uuml; beinhaltet 3 Hauptpunkte: Datei,
+Programm und Fehlersuche.</font>
+<blockquote><font color="#330000">Datei:</font></blockquote>
+
+<blockquote STYLE="margin-left: 2cm; margin-right: 2cm">In diesem Men&uuml;
+befindet sich der Punkt Laden, mit dem eine cps-Datei geladen werden kann.
+Au&szlig;erdem findet sich hier der Men&uuml;punkt speichern zum speichern
+einer cps-Datei und Beenden um den Simulator zu beenden.</blockquote>
+
+<blockquote><font color="#330000">Programm:</font></blockquote>
+
+<blockquote STYLE="margin-left: 2cm; margin-right: 2cm">Dieses Men&uuml;
+enth&auml;lt alle Punkte zur Ausf&uuml;hrung des Maschinenprogrammes: Ausf&uuml;hren
+setzt den Programmz&auml;hler auf den Wert der Startadresse und startet
+die Ausf&uuml;hrung. Schrittweise Ausf&uuml;hren f&uuml;hrt den n&auml;chsten
+Befehl aus. Achtung: Der Programmz&auml;hler wird nicht auf den Anfang
+gesetzt, da Sie sich ja m&ouml;glicherweise mitten in einer Ausf&uuml;hrung
+befinden. Fortfahren startet die Ausf&uuml;hrung, aber der Programmz&auml;hler
+wird nicht zur&uuml;ckgesetzt und Stoppen stoppt die Ausf&uuml;hrung.</blockquote>
+
+<blockquote><font color="#330000">Fehlersuche:</font></blockquote>
+
+<blockquote STYLE="margin-left: 2cm; margin-right: 2cm">In diesem Men&uuml;
+finden sich die Befehle zum Setzen und L&ouml;schen von Haltepunkten. Bei
+Auswahl von Haltepunkt setzen (F4) erscheint ein Dialog, in dem Sie die
+Adresse des Haltepunktes eingeben k&ouml;nnen. Diesen k&ouml;nnen Sie mit
+Haltepunkt entfernen wieder l&ouml;schen. Die Ausf&uuml;hrung stoppt bevor
+die Zeile mit dem Haltepunkt ausgef&uuml;hrt wird. Sie k&ouml;nnen die
+Haltepunkte auch setzen und entfernen, indem Sie in einem der Adressbereiche
+auf der Speicherinhalt-Fl&auml;che auf die zweite Spalte einer Adresszeile
+klicken und das entsprechende Symbol ausw&auml;hlen.</blockquote>
+<font color="#330000"><a href="#Anfang">Zur&uuml;ck zum Anfang der Seite</a></font>
+<p><a NAME="Toolbar"></a><b><font color="#330000">Die Toolleiste:</font></b>
+<br><font color="#330000">In der Toolleiste sind alle Befehle au&szlig;er
+Datei->Beenden nochmals als Symbolknopf verf&uuml;gbar. (Und zwar in genau
+der gleichen Reihenfolge wie in den Men&uuml;s. Also: Laden, Speichern,
+Ausf&uuml;hren, Schrittweise Ausf&uuml;hren, Fortfahren, Stoppen, Haltepunkt
+setzen, Haltepunkt entfernen )</font>
+<p><font color="#330000"><a href="#Anfang">Zur&uuml;ck zum Anfang der Seite</a></font>
+<p><a NAME="Speicher"></a><b><font color="#330000">Der Speicherinhalt:</font></b>
+<br><font color="#330000">In diesem Bereich befinden sich zwei Speicherbereiche
+und zwar um den Programmz&auml;hler und das Adressregister herum. Sie k&ouml;nnen
+die Werte dieser Register &auml;ndern um andere Speicherbereiche anzuzeigen,
+oder die Programmausf&uuml;hrung zu beeinflussen. Geben Sie dazu eine Zahl
+in das Eingabefeld PC oder AR ein und dr&uuml;cken Sie Return oder verlassen
+Sie das Eingabefeld. Den Speicher k&ouml;nnen Sie editieren, indem Sie
+auf die 3 Spalte einer Adresszeile doppelt klicken und dann den Befehl
+oder die Zahl eingeben. Klicken Sie auf die zweite Zeile, so k&ouml;nnen
+Sie Haltepunkte setzen oder entfernen, oder den Anfang oder das Ende setzen.
+Ist in einer Zeile sowohl ein Haltepunkt, als auch der Anfang oder das
+Ende, so wird nur das Icon f&uuml;r Anfang oder Ende angezeigt. Der Haltepunkt
+ist aber trotzdem vorhanden. Mit den Hoch- und Runter-Pfeilen kann man
+das entsprechende Register um 12 erh&ouml;hen oder verringern um den Ausschnitt
+des Speicherbereiches eine Seite vor oder zur&uuml;ck zu bewegen.</font>
+<p><font color="#330000"><a href="#Anfang">Zur&uuml;ck zum Anfang der Seite</a></font>
+<p><a NAME="Register"></a><b><font color="#330000">Die Register:</font></b>
+<br><font color="#330000">In der Fl&auml;che f&uuml;r die Register sind
+die Werte der Register angezeigt. Alle Registerwerte werden bin&auml;r
+angezeigt. Einige Register werden dar&uuml;ber hinaus auch dezimal oder
+als Befehl angezeigt. Der Wert des Accumulator l&auml;&szlig;t sich als
+Dezimalwert setzen. Geben Sie hierzu eine Zahl in das Eingabefeld ein und
+dr&uuml;cken Sie Return oder klicken Sie auf ein anderes Eingabefeld/Button
+u.s.w.</font>
+<p><font color="#330000"><a href="#Anfang">Zur&uuml;ck zum Anfang der Seite</a></font>
+<p><a NAME="Einstellungen"></a><b><font color="#330000">Die Einstellungen:</font></b>
+<br><font color="#330000">In der Fl&auml;che f&uuml;r die Einstellungen
+k&ouml;nnen Sie die Geschwindigkeit der CPU und die Anfangs- oder End-Adresse
+festlegen. Die Anfangsadresse wird durch einen kleinen gr&uuml;nen Pfeil
+vor dem Wert in der Speicherzeile angezeigt. Die Endadresse durch ein kleines
+rotes Quadrat. Die Geschwindigkeit kann jederzeit, auch w&auml;hrend der
+Ausf&uuml;hrung eines Maschinenprogrammes ge&auml;ndert werden.</font>
+<p><font color="#330000"><a href="#Anfang">Zur&uuml;ck zum Anfang der Seite</a></font>
+<p><a NAME="Statuszeile"></a><b><font color="#330000">Die Statuszeile:</font></b>
+<br><font color="#330000">Hier k&ouml;nnen Sie den aktuellen Status, oder
+die letzte Fehlermeldung der CPU ablesen.</font>
+<p><font color="#330000"><a href="#Anfang">Zur&uuml;ck zum Anfang der Seite</a></font>
+<p>&nbsp;
+<a href="http://www.ruhr-uni-bochum.de/lpi">Zur&uuml;ck zur Homepage</a>
+</body>
+</html>

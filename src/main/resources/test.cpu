@@ -1,0 +1,28 @@
+e 0
+3
+LOAD 0
+END
+c 1
+e 0
+0
+0
+COMP 0
+STORE 0
+LOAD 15
+COMP 0
+AND 0
+COMP 0
+STORE 1
+LOAD 0
+COMP 0
+AND 15
+COMP 0
+AND 1
+END
+e 15
+1
+
+c 2
+m 0,8
+r
+q
