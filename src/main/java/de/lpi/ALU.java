@@ -1,6 +1,6 @@
-import REGISTER;
+package de.lpi;
 
-class ALU 
+class ALU
 {
    private REGISTER r;
    ALU(REGISTER regs)

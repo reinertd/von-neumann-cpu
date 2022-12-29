@@ -13,16 +13,16 @@ Java laeuft auf allen neueren Rechnern sowohl mit Windows 95 als auch mit Linux 
 
 Unter der Voraussetzung, das Java auf dem Computer korrekt (insbesondere mit richtigem Classpath) installiert ist, und sich im Path befindet, startet man den CPU-Simulator mit folgendem Befehl (unter Windows 95 im Dos-Fenster):
 
-java -cp . usecpu
+java -cp . de.lpi.usecpu
 
 dabei muss man sich in einem Verzeichniss befinden, in dem die Dateien usecpu.class, CPU.class, MEMORY.class, ALU.class sowie REGISTER.class liegen.
 Sollte java von diesem Verzeichniss aus nicht erreichbar sein, muss der Pfad in dem Java installiert wurde mit angegeben werden. Falls Java im Verzeichnis C:\Programme\jdk1.2\ befindet :
 
-c:\Programme\jdk1.2\bin\java -cp . usecpu
+c:\Programme\jdk1.2\bin\java -cp . de.lpi.usecpu
 
 Oder falls man das Java von Windows benutzen moechte:
 
-c:\windows\system\java -cp . usecpu
+c:\windows\system\java -cp . de.lpi.usecpu
 
 ## Benutzung des Programms
 
@@ -31,41 +31,64 @@ Das Programm meldet sich mit folgendem Promt:
 USECPU>
 
 Jetzt sind folgende Befehle moeglich: ( weitere Erlaeuterungen spaeter )
+
  e [Line]              : Editiere den Speicher angefangen mit Zeile Line (Edit)
+
  m [line1[,line2]]     : Zeigt den Speicher von Line1 bis Line2 (Memory)
+
  c [line]              : Startet das Programm beginnend mit Speicherzelle Line (falls Line nicht angegeben wird geht es bei der Speichestelle 
                          weiter, an der zuletzt gestoppt wurde. ) (Continue)
+
  v [line[,wait]]       : Startet das Programm beginnend mit Speicherzelle Line und zeigt dabei bei jedem "Schritt" die Registerinhalte an.
                          Der Parameter wait bestimmt die Zeitdauer, die zwischen zwei Schritten gewartet wird. (Je groesser wait desto laenger)
                          (View)
+
  s [line[,wait]]       : "Step one Line": Fuehre den Befehl an Speicherstelle Line oder der Letzten Speicherposition aus. (Step)
  b line                : Fuege einen Haltepunkt in Zeile line ein. Die CPU wird nun immer stoppen, wenn sie zu dieser Zeile kommt. (Breakpoint)
  d line                : Loesche den Haltepunkt in Zeile line. Die CPU wird nun nicht mehr in dieser Zeile stoppen. ( Delete Breakpoint)
  r                     : Zeige die Registerinhalte an. (Register)
+
  q                     : Beende das Programm (Quit)
 
 Wenn eine leere Zeile oder ein ungueltiger Befehl eingegeben wird, wird eine Hilfe angezeigt.
+
 ACHTUNG: Die Befehle muessen exakt so eingegeben werden, wie oben aufgefuehrt. Gross und Kleinschreibung wird nicht!! ignoriert. D.h. alle Befehle,
 die im "USECPU>"-Promt eigegeben werden (und nicht in den Speicher) muessen klein!! geschrieben werden. Ausserdem darf zwischen Befehl und Parameter nur exakt ein Leerzeichen sein. Am Ende eines Befehls darf kein weiteres Leerzeichen stehen.
 
 Ein kleiner Beispieldialog:
 
 USECPU> e 0
+
  Type in Commands and Data: (Empty Line to Exit, END to Exit and insert endless-slope)
+
 0 : 1
+
 1 : 2
+
 2 : 0
+
 3 : LOAD 0
+
 4 : ADD 1
+
 5 : STORE 2
+
 6 : END
+
 Adding endless-slope at the End of the Program!
+
 USECPU> c 3
+
 Starting CPU at Line 3
+
 Stopped at Line 
+
 6
+
 USECPU> m 2,2
+
 Speicherinhalt: 
+
 2 : LOAD 3 : 3
 
 Der Befehl e 0 ermoeglicht eine Speichereditierung. Die Daten und Befehle eines kleinen Programmes werden nun in den Speicher geschrieben. Das Programm addiert einfach nur die Speicherstelle 0 und die Speicherstelle 1 und Speichert dieses in 2 ab. Mit dem "uneigentlichen" Befehl END wird die Speichereditierung beendet, und das ¨USECPU>"-Promt erscheint. Mit c 3 wird die CPU in Zeile 3 gestartet. Sie stoppt automatisch bei dem "END" Befehl. Mit m 2,2 wird nun der Specherinhalt von Speicherstelle 2 angezeigt, welcher wie zu erwarten 3 = 1+2 betraegt.
@@ -93,19 +116,29 @@ Beispiel:
 Wenn es z.B. eine Datei "and.cpu" mit folgendem Inhalt gibt:
 
 e 0
+
 1
+
 2
+
 0
+
 LOAD 0
+
 ADD 1
+
 STORE 2
+
 END
+
 c 3
+
 m 2,2
+
 q
 
 kann man diese Datei mit dem Befehl:
 
-more and.cpu|java -cp . usecpu
+more and.cpu|java -cp . de.lpi.usecpu
 
 "ausfuehren". Unter Dos ist evtl. der Befehl Type besser zum anzeigen der Dateien geeignet und unter Unix sollte man cat nehmen.

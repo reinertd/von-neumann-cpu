@@ -792,7 +792,7 @@
                           <Properties>
                             <Property name="editable" type="boolean" value="false"/>
                             <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                              <Connection code="REGISTER.toCommand(REGISTER.Opcode(cpu.getRegister().getDR()))+&quot; &quot;+REGISTER.Addr(cpu.getRegister().getDR())" type="code"/>
+                              <Connection code="de.lpi.REGISTER.toCommand(de.lpi.REGISTER.Opcode(cpu.getRegister().getDR()))+&quot; &quot;+de.lpi.REGISTER.Addr(cpu.getRegister().getDR())" type="code"/>
                             </Property>
                           </Properties>
                         </Component>
@@ -839,7 +839,7 @@
                           <Properties>
                             <Property name="editable" type="boolean" value="false"/>
                             <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                              <Connection code="REGISTER.toCommand(cpu.getRegister().getIR())" type="code"/>
+                              <Connection code="de.lpi.REGISTER.toCommand(cpu.getRegister().getIR())" type="code"/>
                             </Property>
                           </Properties>
                         </Component>

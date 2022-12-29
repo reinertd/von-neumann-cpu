@@ -1,3 +1,5 @@
+package de.lpi;
+
 class REGISTER
 {
    static int LOAD = 0;

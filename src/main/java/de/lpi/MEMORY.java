@@ -1,5 +1,6 @@
+package de.lpi;
+
 import java.lang.*;
-import REGISTER;
 
 class MEMORY
 {

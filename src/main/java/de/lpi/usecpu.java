@@ -1,8 +1,7 @@
+package de.lpi;
+
 import java.io.*;
 import java.lang.*;
-import MEMORY;
-import CPU;
-import CPUFrame;
 import java.util.ResourceBundle;
 
 public class usecpu implements java.beans.PropertyChangeListener

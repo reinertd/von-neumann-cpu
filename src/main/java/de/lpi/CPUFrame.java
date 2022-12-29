@@ -1,14 +1,12 @@
-/*
- * CPUFrame.java
+package de.lpi;/*
+ * de.reinert.CPUFrame.java
  *
  * Created on 23. Oktober 2001, 14:10
  */
 import javax.swing.table.AbstractTableModel;
 import java.util.*;
 import javax.swing.*;
-import java.awt.event.*;
 import java.awt.*;
-import java.util.jar.*;
 import java.net.*;
 import java.io.*;
 /**

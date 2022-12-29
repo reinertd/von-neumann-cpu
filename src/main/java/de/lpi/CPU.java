@@ -1,8 +1,7 @@
+package de.lpi;
+
 import java.util.*;
 import java.lang.*;
-import REGISTER;
-import MEMORY;
-import ALU;
 
 class CPU implements java.lang.Runnable
 {  
